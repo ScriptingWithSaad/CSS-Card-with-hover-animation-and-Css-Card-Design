@@ -1,0 +1,102 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.continer {
+    width: 90%;
+    height: 90%;
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 348px;
+    height: 225px;
+    background: url('sky.jpg')no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.card .card2 {
+    position: relative;
+    width: 320px;
+    height: 200px;
+    background: #000;
+    bottom: -50px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.card .card2:hover {
+    bottom: 25px;
+}
+
+.card .card2::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    filter: blur(100px);
+    right: -30%;
+    bottom: -30%;
+    background: linear-gradient(45deg, skyblue, gold, red, skyblue);
+}
+
+.card2 .head {
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card2 .head h2 {
+    color: #fff;
+    padding-left: 20px;
+}
+
+.card2 .head img {
+    color: #fff;
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+.card2 p {
+    color: #fff;
+    word-break: break-all;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.card2 button {
+    color: #fff;
+    padding: 7px 20px;
+    margin-left: 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    font-family: "system-ui";
+    transition: all .3s ease-in-out;
+}
+
+.card2 button:hover {
+    color: #000;
+    background: #fff;
+}
